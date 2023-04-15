@@ -15,17 +15,20 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from coder51325.views import *
+#from coder51325.views import *
+from app51325.views import *
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('saludar/', saludar),
-    path('chau/', chau ),
-    path('dia/', dia_de_hoy),
-    path('saludo/<nombre>', saludo_nombre),
-    path('edad/<edad>', cal_anio_nac),
-    path('probhtml/', prob_html),
-    path('probloader/', probloaderhtml),
+    #path('saludar/', saludar),
+    #path('chau/', chau ),
+    #path('dia/', dia_de_hoy),
+    #path('saludo/<nombre>', saludo_nombre),
+    #path('edad/<edad>', cal_anio_nac),
+    #path('probhtml/', prob_html),
+    #path('probloader/', probloaderhtml),
+    path('alta_proveedor/',alta_proveedor )
 
 
 
