@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 import datetime
-from django.template import Template, Context
+from django.template import Template, Context, loader
+
 
 def saludar(request):
     return HttpResponse("Hola Mundo!!!!!!!!!!")
@@ -27,11 +28,24 @@ def prob_html(request):
     archivo = open(r"C:\Users\Silvano Estrada\Desktop\CURSOS\CODER - PYTHON\Trabajo51325\Plantillas\template1.html")
     #texto = archivo.read()
     
+    dic = {"Nombre":"Homero", "Apellido":"Simpson", "Cliente":"1"}
+
 
     temp = Template(archivo.read())
 
     archivo.close()
-    cont = Context()
+    cont = Context(dic)
     doc = temp.render(cont)
 
     return HttpResponse(doc)
+
+
+def probloaderhtml(request):
+
+    diccionario= {"Nombre":"Homero", "Apellido":"Simpson", "Cliente":"1", "DNI":"C4204123"}
+
+    template = loader.get_template('template1.html')
+
+    documento = template.render(diccionario)
+
+    return HttpResponse(documento)

@@ -25,4 +25,9 @@ urlpatterns = [
     path('saludo/<nombre>', saludo_nombre),
     path('edad/<edad>', cal_anio_nac),
     path('probhtml/', prob_html),
+    path('probloader/', probloaderhtml),
+
+
+
+    
 ]
