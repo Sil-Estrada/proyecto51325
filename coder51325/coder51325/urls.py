@@ -21,8 +21,9 @@ from app51325.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', inicio ),
+    path('', inicio , name= 'inicio'),
     path('app51325/', include('app51325.urls')),
+    path('proveedor/',proveedores_, name= "proveedor"),
 
 
 

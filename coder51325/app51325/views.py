@@ -33,6 +33,14 @@ def inicio(request):
     return render(request, 'inicio.html')
 
 
+def alta_cliente (request):
+    return "falta configurar"
+
+
+def prod_oferta (request):
+    return "falta configurar"
+
+
 
 
 
