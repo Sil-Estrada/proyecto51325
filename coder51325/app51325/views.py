@@ -18,19 +18,19 @@ def alta_proveedor (request):
     return HttpResponse(respuesta)
 
 def proveedores_ (request):
-    return HttpResponse("Proveedores")
+    return render(request, 'proveedores.html')
 
 def cliente_ (request):
-    return HttpResponse("Clientes")
+    return render(request, 'clientes.html')
 
 def producto_ (request):
-    return HttpResponse("Productos")
+    return render(request, 'productos.html')
 
 def carrito_ (request):
-    return HttpResponse("Carrito")
+    return render(request, 'carrito.html')
 
 def inicio(request):
-    return HttpResponse("Bienvenidos, que deseas llevar")
+    return render(request, 'inicio.html')
 
 
 
