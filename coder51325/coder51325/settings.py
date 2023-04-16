@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'app51325',
+
+
 ]
 
 MIDDLEWARE = [
@@ -54,7 +57,7 @@ ROOT_URLCONF = 'coder51325.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["C:/Users/Silvano Estrada/Desktop/CURSOS/CODER - PYTHON/Trabajo51325/Plantillas"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
