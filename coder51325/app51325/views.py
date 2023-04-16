@@ -17,6 +17,20 @@ def alta_proveedor (request):
 
     return HttpResponse(respuesta)
 
+def proveedores_ (request):
+    return HttpResponse("Proveedores")
+
+def cliente_ (request):
+    return HttpResponse("Clientes")
+
+def producto_ (request):
+    return HttpResponse("Productos")
+
+def carrito_ (request):
+    return HttpResponse("Carrito")
+
+def inicio(request):
+    return HttpResponse("Bienvenidos, que deseas llevar")
 
 
 
